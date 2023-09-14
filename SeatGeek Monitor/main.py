@@ -146,7 +146,7 @@ def Main():
         while True:
             for proxy_config in proxies:
                 #print(str(proxy_config))
-                browser = p.chromium.launch(headless=False)#, proxy=proxy_config)
+                browser = p.chromium.launch(headless=False, proxy=proxy_config)
                 Run(browser, proxy_config)
                 time.sleep(1)
 
